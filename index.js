@@ -173,7 +173,11 @@ class UI {
     cart = cart.filter((item) => item.id !== id);
     Storage.saveCart(cart);
     this.setCartValue(cart);
-    this.updateSingleBtn(id);
+    try{
+      this.updateSingleBtn(id);
+    }catch{
+      console.log("error finding btn");
+    }
     if (modalMain.children.length == 1) {
       this.confirmModalFunc();
     }
