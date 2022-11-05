@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <meta name="description" content="a simple shop">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header-section">
+        <section class="navbar container">
+            <span class="navbar__cart">
+                <i class="fas fa-cart-plus"></i>
+                <span class="cart__count">0</span>
+            </span>
+            <span class="navbar__title">My Shop</span>
+            <span class="navbar__menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </span>
+        </section>
+    </header>
+
+    <main class="main-section">
+        <header class="main__header container">
+            <h1 class="title">Product Filter</h1>
+            <input class="main__search" type="text" placeholder="Search Product ...">
+            <div class="main__categories">
+                <button class="btn cat" data-filter="">All</button>
+                <button class="btn cat" data-filter="watch">Watch</button>
+                <button class="btn cat" data-filter="shirt">Shirt</button>
+                <button class="btn cat" data-filter="gown">Gown</button>
+                <button class="btn cat" data-filter="jewelry">jewelry</button>
+            </div>
+
+        </header>
+
+        <section class="products container">
+        </section>
+    </main>
+
+    <section class="modal-section">
+        <div class="back-drop"></div>
+        <div class="modal">
+            <header class="modal__header">
+                <h2 class="modal__title">Your Cart</h2>
+            </header>
+
+            <main class="modal__main">
+            </main>
+
+            <footer class="modal__footer">
+                <span class="total-price"></span>
+                <div class="modal__buttons">
+                    <button class="btn clear-modal">clear cart</button>
+                    <button class=" btn confirm-modal">confirm</button>
+                </div>
+
+            </footer>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/index.js"></script>
+</body>
+
+</html>
